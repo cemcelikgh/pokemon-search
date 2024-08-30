@@ -1,8 +1,7 @@
-# pokemon_search-freecodecamp
-JavaScript Algorithms and Data Structures Certification Project<br>
-Pokémon Search<br>
-A Pokémon search app</p>
+# pokemon-search
+freeCodeCamp JavaScript Algorithms and Data Structures Certification Project
+<br>Pokémon Search
 
-[freeCodeCamp](https://www.freecodecamp.org/learn "Earn free verified certifications with freeCodeCamp's core curriculum")
+Browse: <https://cemcelikgh.github.io/pokemon-search/>
 
-![Telephone Number Validator](./pokemon-search.jpg)
+[![Pokémon Search Preview](./assets/pokemon-search-preview.jpg "Browse Pokémon Search")](https://cemcelikgh.github.io/pokemon-search/)

@@ -13,21 +13,6 @@ const pokemonSpecialAttack = document.getElementById('special-attack');
 const pokemonSpecialDefense = document.getElementById('special-defense');
 const pokemonSpeed = document.getElementById('speed');
 
-const clearPokemonData = () => {
-  pokemonName.textContent = '';
-  pokemonId.textContent = '';
-  pokemonWeight.textContent = '';
-  pokemonHeight.textContent = '';
-  pokemonSprite.innerHTML = '';
-  pokemonTypes.innerHTML = '';
-  pokemonHp.textContent =  '';
-  pokemonAttack.textContent =  '';
-  pokemonDefense.textContent =  '';
-  pokemonSpecialAttack.textContent =  '';
-  pokemonSpecialDefense.textContent =  '';
-  pokemonSpeed.textContent =  '';
-};
-
 const searchPokemon = (event) => {
   event.preventDefault();
 
@@ -35,6 +20,21 @@ const searchPokemon = (event) => {
     searchInput.setCustomValidity('');
     searchInput.reportValidity();
     return;
+  };
+
+  const clearPokemonData = () => {
+    pokemonName.textContent = '';
+    pokemonId.textContent = '';
+    pokemonWeight.textContent = '';
+    pokemonHeight.textContent = '';
+    pokemonSprite.innerHTML = '';
+    pokemonTypes.innerHTML = '';
+    pokemonHp.textContent =  '';
+    pokemonAttack.textContent =  '';
+    pokemonDefense.textContent =  '';
+    pokemonSpecialAttack.textContent =  '';
+    pokemonSpecialDefense.textContent =  '';
+    pokemonSpeed.textContent =  '';
   };
 
   fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${searchInput.value.toLowerCase()}`)
