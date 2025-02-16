@@ -17,7 +17,6 @@ const searchPokemon = (event) => {
   event.preventDefault();
 
   if (searchInput.validity.valueMissing) {
-    searchInput.setCustomValidity('');
     searchInput.reportValidity();
     return;
   };
